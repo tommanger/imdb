@@ -1,0 +1,11 @@
+<div class="reviews-container">
+    <div class="flex space">
+      <h4>Add Review:</h4>
+      <button (click)="goBack()">Back</button>
+    </div>
+    <form (ngSubmit)="sendReview($event)" class="flex column add-review">
+      <input [value]="(review) ? review.name : ''" type="text" placeholder="Your name:">
+      <input class="input-review" [value]="(review) ? review.review : ''" placeholder="Your review:">
+      <button type="submit">Send</button>
+    </form>
+  </div>

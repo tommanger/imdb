@@ -1,0 +1,48 @@
+.reviews-container{
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+button{
+    border: 0;
+    color: white;
+    background-color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 15px;
+    max-height: 50px;
+}
+button:hover{
+    background-color: rgb(78, 78, 78);
+}
+
+.add-review{
+    margin-top: 20px;
+    input{
+        height: 40px;
+        background-color: #dfdfdf;
+        border: 0;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        outline: none;
+    }
+    .input-review{
+        height: 80px;
+        background-color: #dfdfdf;
+        border: 0;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        outline: none;
+        font-family: inherit;
+    }
+    button{
+        max-width: 80px;
+        align-self: flex-end;
+    }
+}

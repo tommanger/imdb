@@ -1,0 +1,10 @@
+<div class="has-slider">
+    <div class="slider" *ngIf="movies.length > 0">
+        <div id="story2" [style.background-image]="'url('+movies[currStory].Poster+')'" class="front-side">
+        </div>
+        <div *ngIf="currStory<movies.length-1" id="story1" [style.background-image]="'url('+movies[currStory+1].Poster+')'" class="left-side">
+        </div>
+        <div *ngIf="currStory>0" id="story3" [style.background-image]="'url('+movies[currStory-1].Poster+')'" class="right-side">
+        </div>
+    </div>
+</div>

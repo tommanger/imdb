@@ -1,0 +1,22 @@
+<div class="reviews-container">
+  <div class="flex space">
+    <h4>Movie Reviews:</h4>
+    <button routerLink="edit">Add Review</button>
+  </div>
+  <div class="reviews-list">
+    <!-- <h2 *ngIf="reviews.length === 0">No reviews yet</h2> -->
+    <ul *ngIf="reviews">
+      <li *ngFor="let review of reviews" class="flex space">
+        <div>
+          <h4>Name: {{review.name}}</h4>
+          <p>{{review.review}}</p>
+        </div>
+        <div class="flex column">
+          <button [routerLink]="'edit/'+review._id">Edit review</button>
+          <button (click)="deleteReview(review._id)">Delete review</button>
+        </div>
+
+      </li>
+    </ul>
+  </div>
+</div>

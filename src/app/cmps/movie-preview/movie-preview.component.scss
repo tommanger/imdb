@@ -1,0 +1,24 @@
+.movie-pre-container{
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 0px #0397D6;
+    transition: all .4s;
+
+}
+.movie-pre-container:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 0 7px #0397D6;
+}
+.movie-title{
+    color: white;
+    padding: 0 10px;
+    font-size: 15px;
+    text-shadow: 0 0 20px black;
+}   

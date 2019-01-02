@@ -1,0 +1,37 @@
+.details-container{
+    background-color: white;
+    margin-top: 90px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.details-header{
+    background-color: #333;
+    color: white;
+    padding: 0 15px 25px;
+}
+
+.details-more{
+    margin: 26px;
+    h4{
+        margin-bottom: 20px;
+        span{
+            color: rgb(66, 66, 66);
+        }
+    }
+}
+.details-rate{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+h4{
+    margin: 0;
+}
+h1{
+    margin: 0;
+    span{
+        color: #a8a8a8;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,11 @@
+<div class="movie-list">
+  <input class="search-movies" [value]=value type="text" (input)="searchMovies($event)">
+  <div class="flex storys">
+    <app-story *ngFor="let movie of movies let idx = index"
+     [movie]="movie"
+     [movies]="movies"></app-story>
+  </div>
+  <div class="list-container">
+    <app-movie-preview *ngFor="let movie of movies" [movie]="movie"></app-movie-preview>
+  </div>
+</div>

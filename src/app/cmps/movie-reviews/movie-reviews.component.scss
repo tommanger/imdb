@@ -1,0 +1,46 @@
+.reviews-container{
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+button{
+    border: 0;
+    color: white;
+    background-color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 15px;
+    max-height: 55px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(78, 78, 78);
+
+}
+.reviews-list{
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        background-color: #e8ebf5;
+        list-style-type: none;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        padding: 10px 10px 10px 30px;
+        border-radius: 10px;
+        margin-top: 10px; 
+    }
+    button{
+        background-color: white;
+        color: #333;
+        margin: 3px;
+        transition: all .4s;
+    }
+    button:hover{
+        background-color: rgb(218, 218, 218);
+    }
+}

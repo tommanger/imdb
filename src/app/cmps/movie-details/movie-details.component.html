@@ -1,0 +1,26 @@
+<div *ngIf="movie" class="details-container">
+  <div class="flex column details-header">
+    <div class="flex space align-center">
+      <h1>{{movie.Title}} <span>({{movie.Year}})</span></h1>
+      <div>
+        <h1 class="details-rate">{{movie.imdbRating}} <span>/10</span></h1>
+        <h4>{{movie.imdbVotes}}</h4>
+      </div>
+    </div>
+    <div>
+      <h4>{{movie.Rated}} | {{movie.Runtime}} | {{movie.Genre}} | {{movie.Released}} <span>({{movie.Country}})</span></h4>
+    </div>
+  </div>
+  <div class="flex">
+    <img [src]=movie.Poster>
+    <div class="flex column details-more">
+      <h4>{{movie.Plot}}</h4>
+      <h4>Director: <span>{{movie.Director}}</span></h4>
+      <h4>Writer: <span>{{movie.Writer}}</span></h4>
+      <h4>Actors: <span>{{movie.Actors}}</span></h4>
+      <h4>Production: <span>{{movie.Production}}</span></h4>
+      <h4>BoxOffice: <span>{{movie.BoxOffice}}</span></h4>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
